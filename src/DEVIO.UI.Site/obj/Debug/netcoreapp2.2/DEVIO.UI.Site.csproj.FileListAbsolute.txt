@@ -25,3 +25,5 @@ C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\DEV
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\DEVIO.UI.Site.pdb
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\DEVIO.UI.Site.genruntimeconfig.cache
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\DEVIO.UI.Site.csproj.CopyComplete
+C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
