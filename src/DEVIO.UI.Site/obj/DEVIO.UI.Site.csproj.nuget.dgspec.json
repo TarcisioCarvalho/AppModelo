@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj": {}
+    "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj": {
+    "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
+        "projectUniqueName": "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
         "projectName": "DEVIO.UI.Site",
-        "projectPath": "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
+        "projectPath": "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
         "packagesPath": "C:\\Users\\tarci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\obj\\",
+        "outputPath": "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

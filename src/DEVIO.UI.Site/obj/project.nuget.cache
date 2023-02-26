@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iXmz7cbr5rhSXfmJistPrZb8fQWbQFQ9VttFrWP2e+BmGAcDGr0HYKIyal0EM+hRjSHnwu1Kks/Agq2UkFIl4g==",
+  "dgSpecHash": "++5/s7PCwpxogiPBkju2PQ3is/vajCu4i+v56k17ls/ZIxGZdKS4ivI1XOfEMNcWfggky4DYP1jZsygDAgtSLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tarci\\Documents\\AppModelo\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
+  "projectFilePath": "C:\\Users\\tarci\\Documents\\AppModelo\\src\\DEVIO.UI.Site\\DEVIO.UI.Site.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarci\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
