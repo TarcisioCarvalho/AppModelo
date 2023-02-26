@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVIO.UI.Site", "src\DEVIO.UI.Site\DEVIO.UI.Site.csproj", "{CE84015B-33E3-4A45-A110-0EA3CF958AA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVIO.UI.Site", "src\DEVIO.UI.Site\DEVIO.UI.Site.csproj", "{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE84015B-33E3-4A45-A110-0EA3CF958AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE84015B-33E3-4A45-A110-0EA3CF958AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE84015B-33E3-4A45-A110-0EA3CF958AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE84015B-33E3-4A45-A110-0EA3CF958AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8DC69154-0989-4A2D-88F8-4040814C6196}
+		SolutionGuid = {59578395-E731-4BFC-B2F7-C76E12F7FB78}
 	EndGlobalSection
 EndGlobal
