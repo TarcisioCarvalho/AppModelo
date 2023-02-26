@@ -70,3 +70,4 @@ C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\net5.0\DEVIO.UI.S
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\net5.0\ref\DEVIO.UI.Site.dll
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\net5.0\DEVIO.UI.Site.csproj.CopyComplete
 C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\tarci\Documents\AppModelo\src\DEVIO.UI.Site\bin\Debug\net5.0\bundleconfig.json

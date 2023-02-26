@@ -26,7 +26,7 @@ namespace DEVIO.UI.Site
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseRouting();
 
