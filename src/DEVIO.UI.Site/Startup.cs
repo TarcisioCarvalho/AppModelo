@@ -32,8 +32,12 @@ namespace DEVIO.UI.Site
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("areas",
+                    "{areas:exists}/{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapControllerRoute("default",
                     "{controller=Home}/{action=Index}/{id?}");
+                
                 endpoints.MapRazorPages();
             });
         }
