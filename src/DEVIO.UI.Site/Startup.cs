@@ -1,3 +1,4 @@
+using DEVIO.UI.Site.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +18,8 @@ namespace DEVIO.UI.Site
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(options => options.LowercaseUrls = true);
+
             services.Configure<RazorViewEngineOptions>(options => 
             {
                 options.AreaViewLocationFormats.Clear();
@@ -25,6 +28,7 @@ namespace DEVIO.UI.Site
                 options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
             });
             services.AddMvc();
+            services.AddTransient<IPedidoRepository,PedidoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,9 +46,11 @@ namespace DEVIO.UI.Site
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("areas",
-                    "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
+                //endpoints.MapControllerRoute("areas","{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapAreaControllerRoute("AreaProdutos",
+                    "Produtos", "Produtos/{controller=Cadastro}/{action=Index}/{id?}");
+                endpoints.MapAreaControllerRoute("AreaVendas",
+                    "Vendas", "Vendas/{controller=Pedidos}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("default",
                     "{controller=Home}/{action=Index}/{id?}");
                 
