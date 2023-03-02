@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVIO.UI.Site", "src\DEVIO.UI.Site\DEVIO.UI.Site.csproj", "{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVIO.UI.Site", "src\DEVIO.UI.Site\DEVIO.UI.Site.csproj", "{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreIdentity", "src\AspNetCoreIdentity\AspNetCoreIdentity.csproj", "{F9382B76-994B-448A-88F4-9A2961D7F06E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1251883B-1672-4C8B-BA8F-9FA5B8BFECB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9382B76-994B-448A-88F4-9A2961D7F06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9382B76-994B-448A-88F4-9A2961D7F06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9382B76-994B-448A-88F4-9A2961D7F06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9382B76-994B-448A-88F4-9A2961D7F06E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
