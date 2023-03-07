@@ -1,4 +1,5 @@
-﻿using AspNetCoreIdentity.Models;
+﻿using AspNetCoreIdentity.Extensions;
+using AspNetCoreIdentity.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -46,7 +47,7 @@ namespace AspNetCoreIdentity.Controllers
             return View();
         }
 
-        
+        [ClaimsAuthorize("Home","Secret")]
         public IActionResult ClaimsCustom()
         {
             return View();
