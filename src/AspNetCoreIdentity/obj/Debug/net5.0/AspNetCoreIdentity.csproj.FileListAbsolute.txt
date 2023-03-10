@@ -163,3 +163,4 @@ C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\AspNe
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\ref\AspNetCoreIdentity.dll
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\Secret.cshtml.g.cs
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\SecretClaimsPodeEscrever.cshtml.g.cs
+C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\ClaimsCustom.cshtml.g.cs

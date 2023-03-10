@@ -12,7 +12,7 @@ namespace AspNetCoreIdentity.Extensions
         public static bool ValidarClaimsUsuario(HttpContext httpContext,string claimName,string claimValue)
         {
             return httpContext.User.Identity.IsAuthenticated &&
-                httpContext.User.Claims.Any(c => c.ValueType == claimName && c.Value.Contains(claimValue));
+                httpContext.User.Claims.Any(c => c.Type == claimName && c.Value.Contains(claimValue));
         }
        
     }
@@ -22,7 +22,7 @@ namespace AspNetCoreIdentity.Extensions
         public ClaimsAuthorizeAttribute(string claimName, string claimValue)
             : base(typeof(RequistoClaimFilter))
         {
-            Arguments = new object[] { claimName, claimValue };
+            Arguments = new object[] { new Claim(claimName, claimValue) };
         }
     }
     public class RequistoClaimFilter : IAuthorizationFilter

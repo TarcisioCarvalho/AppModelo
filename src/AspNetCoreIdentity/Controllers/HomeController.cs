@@ -30,7 +30,7 @@ namespace AspNetCoreIdentity.Controllers
         {
             return View();
         }
-        [Authorize(Roles = "Admin")]
+        
         public IActionResult Secret()
         {
             return View();
@@ -47,7 +47,7 @@ namespace AspNetCoreIdentity.Controllers
             return View();
         }
 
-        [ClaimsAuthorize("Home","Secret")]
+        [ClaimsAuthorize("Produtos","Ler2")]
         public IActionResult ClaimsCustom()
         {
             return View();
