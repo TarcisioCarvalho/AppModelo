@@ -1,4 +1,5 @@
 using AspNetCoreIdentity.Areas.Identity.Data;
+using AspNetCoreIdentity.Config;
 using AspNetCoreIdentity.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -26,7 +27,7 @@ namespace AspNetCoreIdentity
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+       
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -40,19 +41,14 @@ namespace AspNetCoreIdentity
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AspNetCoreIdentityContext>();
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("PodeExcluir",policy => policy.RequireClaim("PodeExcluir"));
-                options.AddPolicy("PodeLer", policy => policy.Requirements.Add(new PermissaoNecessaria("PodeLer")));
-                options.AddPolicy("PodeEscrever", policy => policy.Requirements.Add(new PermissaoNecessaria("PodeEscrever")));
-            });
+            services.AddAuthorizationConfig();
 
-            services.AddSingleton<IAuthorizationHandler, PermissaoNecessariaHandler>();
+            services.ResolveDependencies();
         }
 
         
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -62,7 +58,7 @@ namespace AspNetCoreIdentity
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+               
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
