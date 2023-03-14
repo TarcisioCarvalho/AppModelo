@@ -1,9 +1,6 @@
-using AspNetCoreIdentity.Areas.Identity.Data;
 using AspNetCoreIdentity.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,8 +18,13 @@ namespace AspNetCoreIdentity
             var builder = new ConfigurationBuilder()
                 .SetBasePath(hostingEnvironment.ContentRootPath)
                 .AddJsonFile("appsettings.json", true, true)
-                .AddJsonFile($"appsettings{hostingEnvironment.EnvironmentName}.json", true, true)
+                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.json", true, true)
                 .AddEnvironmentVariables();
+
+            if (hostingEnvironment.IsProduction())
+            {
+                builder.AddUserSecrets<Startup>();
+            }
 
             Configuration = builder.Build();
         }
