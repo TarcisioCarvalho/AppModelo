@@ -164,3 +164,5 @@ C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\ref\A
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\Secret.cshtml.g.cs
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\SecretClaimsPodeEscrever.cshtml.g.cs
 C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Home\ClaimsCustom.cshtml.g.cs
+C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\tarci\Documents\AppModelo\src\AspNetCoreIdentity\bin\Debug\net5.0\appsettings.Staging.json

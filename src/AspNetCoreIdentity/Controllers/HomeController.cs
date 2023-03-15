@@ -28,6 +28,7 @@ namespace AspNetCoreIdentity.Controllers
 
         public IActionResult Privacy()
         {
+            throw new Exception("Erro");
             return View();
         }
         
@@ -53,10 +54,29 @@ namespace AspNetCoreIdentity.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [Route("erro/{id:length(3,3)}")]
+        public IActionResult Error(int id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var modelErro = new ErrorViewModel();
+            if(id == 500)
+            {
+                modelErro.Mensagem = "Ocorreu um Erro! Tente Novamente mais tarde!";
+                modelErro.Titulo = "Ocorreu um Erro";
+                modelErro.ErroCode = id;
+            }
+            if(id == 404)
+            {
+                modelErro.Mensagem = "A página que está procurando não existe";
+                modelErro.Titulo = "Página não encontrada";
+                modelErro.ErroCode = id;
+            }
+            if (id == 403)
+            {
+                modelErro.Mensagem = "Acesso Não Autorizado";
+                modelErro.Titulo = "Sem Acesso!";
+                modelErro.ErroCode = id;
+            }
+            return View("Error",modelErro);
         }
     }
 }
